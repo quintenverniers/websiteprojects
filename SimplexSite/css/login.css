@@ -1,0 +1,58 @@
+* { margin: 0; padding: 0; }
+
+.header{
+    display: flex;
+    padding-left: 10px;
+    height: 120px;
+    background-color: red;
+    width: 100%;
+    justify-content: center;
+}
+
+.header h1{
+    font-size: 30px;
+    font-family: Pacifico;
+    color: white;
+    text-align: center;
+}
+
+.header div {
+    display: block;
+}
+
+.Gplay {
+    margin: 0;
+    max-width: 150px;
+    display: inline;
+}
+
+.content{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.form {
+    padding: 20px;
+    width: 100%;
+    background-color:lightgrey;
+    border-radius: 18px;
+}
+
+.form h2 {
+    font-family: Roboto;
+    color: crimson;
+}
+
+.form input {
+    border-radius: 22px;
+    width: 85%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.form h3 {
+    margin: 5px;
+}
