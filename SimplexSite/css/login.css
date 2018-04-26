@@ -26,33 +26,51 @@
     display: inline;
 }
 
-.content{
-    width: 100%;
-    padding-top: 20px;
+.container {
     display: flex;
-    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
-.form {
+.login {
+    text-align: center;
+    width: 70%;
+    max-width: 600px;
+    margin-top: 20px;
     padding: 20px;
-    width: 100%;
-    background-color:lightgrey;
     border-radius: 18px;
+    background-color:wheat;
 }
 
-.form h2 {
-    font-family: Roboto;
-    color: crimson;
+.login ul {
+    list-style: none;
 }
 
-.form input {
-    border-radius: 22px;
-    width: 85%;
-    padding: 10px;
-    margin: 5px 0;
+.login ul li {
+    /*margin-left: -23px;*/
 }
 
-.form h3 {
+form {
+    
+}
+
+input {
+    border-style: solid;
+    border-radius: 10px;
+    width: 80%;
     margin: 5px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .login {
+        text-align: center;
+        width: 85%;
+        max-width: 600px;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 18px;
+        background-color:wheat;
+    }
 }
