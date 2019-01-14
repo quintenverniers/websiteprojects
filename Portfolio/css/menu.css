@@ -2,6 +2,9 @@ nav {
     height: 50px;
     width: 100%;
     text-align: justify;
+    position:fixed;
+    top:0;
+    background-color: #1D1D1D;
 }
 
 #logo {
