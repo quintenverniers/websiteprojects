@@ -43,6 +43,11 @@ nav a {
     margin-left: 55px;
 }
 
+.selected {
+    text-decoration: line-through;
+    color: mediumaquamarine;
+}
+
 .menu_container {
     visibility: hidden;
 }
