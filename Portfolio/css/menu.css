@@ -81,6 +81,15 @@ nav a {
 
     nav ul {
         max-height: 0px;
+        overflow: hidden;
+    }
+
+    #menu-list li{
+        font-size: 15pt;
+        margin-bottom: 3px;
+    }
+    #menu-list li:last-child{
+        margin-bottom: 6px;
     }
 
     .showing {

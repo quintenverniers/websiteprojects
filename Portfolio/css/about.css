@@ -8,12 +8,13 @@ body {
 }
 
 .col {
-    width: 50%;
+   
 }
 
 #about {
     max-width: 250px;
     margin-top: 50%;
+    margin-left: 50px;
 }
 
 /* --- Text ---*/
