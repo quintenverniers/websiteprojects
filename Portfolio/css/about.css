@@ -7,10 +7,6 @@ body {
     display: flex;
 }
 
-.col {
-   
-}
-
 #about {
     max-width: 250px;
     margin-top: 50%;
@@ -70,7 +66,7 @@ h3 {
     position: fixed;
     right: 0;
     top: 35%;
-    background-color: gray;
+    background-color: #C4C4C4;
     width: 50px;
 }
 
@@ -109,10 +105,6 @@ h3 {
        flex-direction: column;
     }
 
-    .col {
-        width: 100%;
-    }
-
     .col img {
         width: 100%;
         height: auto;
@@ -132,7 +124,7 @@ h3 {
     .side-social {
         position: static;
         width: 100%;
-        background-color: gray;
+        background-color:#C4C4C4;
         padding-top: 10px;
         padding-bottom: 10px;
     }
