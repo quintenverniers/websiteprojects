@@ -1,3 +1,4 @@
+/* --- Main styles --- */
 body {
     color: white;
 }
@@ -12,13 +13,14 @@ body {
 
 #about {
     max-width: 250px;
-    margin-top: 55%;
-    margin-left: 0px;
+    margin-top: 50%;
 }
 
+/* --- Text ---*/
 h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30pt;
+    text-decoration: underline;
 }
 
 h3 {
@@ -34,12 +36,14 @@ h3 {
     font-weight: 100;
 }
 
-
+/* --- Left Image --- */
+/*Image screen height*/
 .col img {
     width: auto;
     height: 100vh;
 }
 
+/* --- Buttons --- */
 .buttons {
     margin-top: 60px;
 }
@@ -60,6 +64,31 @@ h3 {
     background-color: mediumaquamarine;
 }
 
+/* --- Social Buttons --- */
+.side-social {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    background-color: gray;
+    width: 50px;
+}
+
+.side-social ul {
+    list-style-type: none;
+}
+
+.side-social ul li {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.side-social img {
+    height: 30px;
+    width: auto;
+}
+
+/* --- iPad Pro --- */
 @media only screen 
   and (min-width: 1024px) 
   and (max-height: 1366px) 
@@ -72,6 +101,7 @@ h3 {
     }
 }
 
+/* --- Responsive --- */
 @media screen and (max-width: 1270px) {
     #content-wrapper {
         display: flex;
@@ -88,9 +118,37 @@ h3 {
     }
 
     #about {
+        transform: none;
         max-width: 250px;
         margin-top: -50px;
         margin-left: 60px;
-        margin-bottom: 40px;
+        margin-bottom: 40px;   
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .side-social {
+        position: static;
+        width: 100%;
+        background-color: gray;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .side-social ul {
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    .side-social ul li {
+        display: inline;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .side-social img {
+        height: 30px;
+        line-height: 30px;
+        width: auto;
     }
 }

@@ -1,3 +1,7 @@
+.menu_container {
+    visibility: hidden;
+}
+
 nav {
     height: 50px;
     width: 100%;
@@ -46,10 +50,6 @@ nav a {
 .selected {
     text-decoration: line-through;
     color: mediumaquamarine;
-}
-
-.menu_container {
-    visibility: hidden;
 }
 
 @media screen and (max-width: 768px) {
