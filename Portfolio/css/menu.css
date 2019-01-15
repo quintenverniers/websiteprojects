@@ -36,7 +36,7 @@ nav {
 }
 
 #menu-list li a:hover {
-    color: mediumaquamarine;
+    color: #48F4F4;
 }
 
 nav a {
@@ -49,7 +49,7 @@ nav a {
 
 .selected {
     text-decoration: line-through;
-    color: mediumaquamarine;
+    color: #48F4F4;
 }
 
 @media screen and (max-width: 768px) {

@@ -48,7 +48,7 @@ h3 {
 .button {
     width: 200px;
     height: 50px;
-    background-color: aquamarine;
+    background-color: #48F4F4;
     text-align: center;
     margin: 5px;
 }
@@ -58,7 +58,7 @@ h3 {
 }
 
 .button:hover {
-    background-color: mediumaquamarine;
+    background-color: #3BC8C8;
 }
 
 /* --- Social Buttons --- */
@@ -85,6 +85,13 @@ h3 {
     width: auto;
 }
 
+/* --- Mac Style Hover --- */
+/*
+.side-social img:hover {
+    height: 50px;
+    width: auto;
+}
+*/
 /* --- iPad Pro --- */
 @media only screen 
   and (min-width: 1024px) 
