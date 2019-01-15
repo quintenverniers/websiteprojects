@@ -126,13 +126,14 @@ h3 {
     }
 }
 
+/* --- Social Icons phone width --- */
 @media screen and (max-width: 500px) {
     .side-social {
         position: static;
         width: 100%;
         background-color: gray;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .side-social ul {
@@ -147,8 +148,8 @@ h3 {
     }
     
     .side-social img {
-        height: 30px;
-        line-height: 30px;
+        height: 35px;
+        line-height: 35px;
         width: auto;
     }
 }
