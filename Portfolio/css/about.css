@@ -14,16 +14,8 @@ body {
 }
 
 /* --- Text ---*/
-h2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30pt;
-    text-decoration: underline;
-}
-
 h3 {
     margin-top: 55px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15pt;
 }
 
 #about p {
