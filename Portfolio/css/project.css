@@ -13,7 +13,7 @@
 }
 
 .description {
-    
+    font-family: Arial, Helvetica, sans-serif;
     max-width: 600px;
 }
 
@@ -32,7 +32,6 @@
 
 .description p {
     margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
 }
 
