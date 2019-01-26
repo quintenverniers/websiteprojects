@@ -71,6 +71,10 @@ nav a {
         visibility: visible;
     }
 
+    .menu_container img {
+        height: 35px;
+    }
+
     #menu-list {
         text-align: center;
         float: none;
@@ -90,7 +94,6 @@ nav a {
 
     #menu-list li{
         font-size: 15pt;
-        margin-bottom: 3px;
     }
     #menu-list li:last-child{
         margin-bottom: 6px;
