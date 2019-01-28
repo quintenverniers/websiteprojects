@@ -5,12 +5,12 @@ body {
 
 #content-wrapper {
     display: flex;
+    margin-top: 100px;
 }
 
 #about {
-    max-width: 250px;
-    margin-top: 50%;
-    margin-left: 50px;
+    max-width: 350px;
+    
 }
 
 /* --- Text ---*/
@@ -27,9 +27,23 @@ h3 {
 
 /* --- Left Image --- */
 /*Image screen height*/
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-complementary {
+    width: 60%;
+}
+
+.col-main {
+    width: 40%;
+}
+
 .col img {
-    width: auto;
-    height: 100vh;
+    max-width: 80%;
+    height: auto;
 }
 
 /* --- Buttons --- */
@@ -91,29 +105,75 @@ h3 {
   and (max-height: 1366px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
+    #content-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 55px;
+    }
+
+    .col-complementary {
+        width: 100%;
+    }
+    
+    .col-main {
+        width: 100%;
+    }
+    
+    .col img {
+        max-width: 100%;
+    }
+
     #about {
-        max-width: 250px;
-        margin-top: 55%;
-        margin-left: 50px;
+        transform: none;
+        max-width: 700px;
+        margin-top: -30px;
+        margin-left: 60px;
+        margin-bottom: 40px;   
     }
 }
 
 /* --- Responsive --- */
-@media screen and (max-width: 1270px) {
-    #content-wrapper {
-        display: flex;
-       flex-direction: column;
+@media screen and (max-width: 1220px) {
+    .col-complementary {
+        width: 50%;
     }
 
-    .col img {
+    .col-main {
+        width: 50%;
+    }
+
+   .col img {
+        max-width: 95%;
+   }
+
+    #about {
+        max-width: 250px;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #content-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 55px;
+    }
+
+    .col-complementary {
         width: 100%;
-        height: auto;
+    }
+    
+    .col-main {
+        width: 100%;
+    }
+    
+    .col img {
+        max-width: 100%;
     }
 
     #about {
         transform: none;
         max-width: 250px;
-        margin-top: -50px;
+        margin-top: -30px;
         margin-left: 60px;
         margin-bottom: 40px;   
     }
