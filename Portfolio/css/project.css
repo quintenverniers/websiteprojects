@@ -1,55 +1,79 @@
+/* --- Main styles --- */
+
+body {
+    color: white;
+}
+
 #content {
+    margin-top: 100px;
+}
+
+#wrapper {
     display: flex;
-    margin-top: 55px;
     justify-content: center;
 }
 
-.thumbnail {
-    width: 70%;
+#description {
+    max-width: 350px;
 }
 
-.description {
-    width: 30%;
+/* --- Text ---*/
+h2 {
+    margin-left: 30px;
+    margin-bottom: 20px;
 }
 
-.slide_images {
-    margin-top: 20px;
-}
-
-.slide_images  img {
-    width: 100%;
-}
-
-.description {
+#description {
     font-family: Arial, Helvetica, sans-serif;
-    
-    margin-left: 50px;
 }
 
-.description h3 {
+#description h3 {
     margin-top: 30px;
 }
 
-.description h4 {
+#description h4 {
     margin-top: 10px;
 }
 
-.description ul {
+#description ul {
     margin-top: 10px;
     list-style-type: none;
 }
 
-.description p {
+#description p {
     margin-top: 20px;
     font-size: 10pt;
 }
 
-.tech_project h4 {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .tech_project ul {
     font-size: 10pt;
+}
+
+
+#aboutContent p {
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-weight: 100;
+}
+
+.col-complementary {
+    width: 60%;
+}
+
+.col-main {
+    width: 40%;
+}
+
+.col img {
+    align-self: flex-start;
+    width: 90%;
+}
+
+/* --- Buttons --- */
+
+.buttons {
+    margin-top: 60px;
 }
 
 .buttons {
@@ -67,40 +91,78 @@
 
 .button p {
     line-height: 50px;
+    font-family: 'Courier', 'Bookman', 'Verdana', 'Arial Black';
 }
 
 .button:hover {
     background-color: #3BC8C8;
 }
-@media screen and (max-width: 1080px) {
-    #content {
+
+/* --- iPad Pro --- */
+
+@media only screen and (min-width: 1024px) and (min-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    #wrapper {
+        flex-direction: column;
         margin-top: 55px;
-        margin-left: 30px;
-        
+    }
+    .col-complementary {
+        width: 100%;
+    }
+    .col-main {
+        width: 100%;
+    }
+    .col img {
+        width: 100%;
+    }
+    #description {
+        transform: none;
+        max-width: 70%;
+        margin-top: -30px;
+        margin-left: 60px;
+        margin-bottom: 40px;
     }
 }
 
-@media screen and (max-width: 900px) {
-    #content {
+@media screen and (max-width: 950px) {
+    #description {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #wrapper {
+        display: flex;
         flex-direction: column;
-        margin-left: 0;
-        justify-content: center;
-        align-items: center;
+        margin-top: 55px;
     }
-
-    .thumbnail {
+    .col-complementary {
         width: 100%;
     }
-    
-    .description {
-        width: 100%;
-    }    
 
-    #content h2, .description {
-        margin-left: 10px;
+    h2 {
+        text-align: center;
     }
+    .col-main {
+        width: 100%;
+    }
+    .col img {
+        width: 100%;
+    }
+    #description {
+        transform: none;
+        max-width: 450px;
+        margin-top: -30px;
+        margin-left: 60px;
+        margin-bottom: 40px;
+    }
+}
 
-    .about_project {
-        max-width: 80%;
+/* --- Social Icons phone width --- */
+
+@media screen and (max-width: 500px) {
+    #description {
+        margin: 0 auto;
+        margin-bottom: 40px;
+        max-width: 70%;
     }
 }
