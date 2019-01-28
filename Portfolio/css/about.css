@@ -101,12 +101,11 @@ h3 {
 */
 /* --- iPad Pro --- */
 @media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
-  and (orientation: landscape) 
+  and (min-width: 1024px)
+  and (min-height: 1366px)
+  and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 1.5) {
     #content-wrapper {
-        display: flex;
         flex-direction: column;
         margin-top: 55px;
     }
@@ -125,33 +124,27 @@ h3 {
 
     #about {
         transform: none;
-        max-width: 700px;
+        max-width: 100%;
         margin-top: -30px;
         margin-left: 60px;
         margin-bottom: 40px;   
     }
 }
 
-/* --- Responsive --- */
-@media screen and (max-width: 1220px) {
-    .col-complementary {
-        width: 50%;
-    }
-
-    .col-main {
-        width: 50%;
-    }
-
-   .col img {
-        max-width: 95%;
-   }
-
+@media screen and (max-width: 980px) {
     #about {
-        max-width: 250px;
+        max-width: 220px;
         margin-left: 50px;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
+    #about {
+        max-width: 200px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
     #content-wrapper {
         display: flex;
         flex-direction: column;
@@ -204,5 +197,11 @@ h3 {
         height: 35px;
         line-height: 35px;
         width: auto;
+    }
+
+    #about {
+        margin: 0 auto;
+        margin-bottom: 40px;
+        max-width: 70%;
     }
 }
