@@ -1,7 +1,15 @@
 #content {
-    max-width: 1000px;
-    margin: 0 auto;
+    display: flex;
     margin-top: 55px;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 70%;
+}
+
+.description {
+    width: 30%;
 }
 
 .slide_images {
@@ -14,7 +22,8 @@
 
 .description {
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 600px;
+    
+    margin-left: 50px;
 }
 
 .description h3 {
@@ -67,20 +76,31 @@
     #content {
         margin-top: 55px;
         margin-left: 30px;
-        max-width: 800px;
+        
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     #content {
+        flex-direction: column;
         margin-left: 0;
+        justify-content: center;
+        align-items: center;
     }
+
+    .thumbnail {
+        width: 100%;
+    }
+    
+    .description {
+        width: 100%;
+    }    
 
     #content h2, .description {
         margin-left: 10px;
     }
 
-    .slide_images img {
-        width: 100%;
+    .about_project {
+        max-width: 80%;
     }
 }
