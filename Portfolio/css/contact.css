@@ -1,0 +1,41 @@
+#content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#form label, input, textarea {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    background: #2B2B2B;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #48F4F4;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #3BC8C8;
+}
