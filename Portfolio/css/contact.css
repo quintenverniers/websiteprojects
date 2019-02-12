@@ -9,6 +9,10 @@
     margin: 0 auto;
 }
 
+#info, #form {
+    margin-top: 30px;
+}
+
 #form label, input, textarea {
     margin: 0;
     padding: 0;
