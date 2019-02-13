@@ -121,3 +121,14 @@ input[type=submit]:hover {
         margin-right: 20px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .side-social {
+        width: 100%;
+    }
+
+    .side-social ul li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
